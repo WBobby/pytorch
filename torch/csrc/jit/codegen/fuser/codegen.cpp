@@ -675,6 +675,9 @@ std::string generateKernel(
 #include <hip/hip_runtime.h>
 )");
   }
+#else
+  // Still need the key defined, but empty.
+  env.s("RuntimeHeader", R"()");
 #endif
 #endif
   // clang-format on
