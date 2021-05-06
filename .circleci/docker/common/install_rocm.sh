@@ -39,7 +39,7 @@ install_ubuntu() {
 
     # Add rocm repository
     wget -qO - http://repo.radeon.com/rocm/rocm.gpg.key | apt-key add -
-    echo "deb [arch=amd64] http://repo.radeon.com/rocm/apt/${ROCM_VERSION} xenial main" > /etc/apt/sources.list.d/rocm.list
+    echo "deb [arch=amd64] http://repo.radeon.com/rocm/apt/${ROCM_VERSION} ubuntu main" > /etc/apt/sources.list.d/rocm.list
     apt-get update --allow-insecure-repositories
 
     DEBIAN_FRONTEND=noninteractive apt-get install -y --allow-unauthenticated \
