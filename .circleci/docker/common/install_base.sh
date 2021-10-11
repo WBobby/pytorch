@@ -12,7 +12,7 @@ install_ubuntu() {
   if [[ "$UBUNTU_VERSION" == "18.04"* ]]; then
     cmake3="cmake=3.10*"
   else
-    cmake3="cmake=3.5*"
+    cmake3="cmake=3.16*"
   fi
 
   # Install common dependencies
@@ -33,7 +33,6 @@ install_ubuntu() {
     git \
     libatlas-base-dev \
     libc6-dbg \
-    libiomp-dev \
     libyaml-dev \
     libz-dev \
     libjpeg-dev \
