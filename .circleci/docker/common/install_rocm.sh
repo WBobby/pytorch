@@ -73,7 +73,8 @@ install_ubuntu() {
                    rocm-libs \
                    rccl \
                    rocprofiler-dev \
-                   roctracer-dev
+                   roctracer-dev \
+                   rocm-hip-runtime-dev
 
     # precompiled miopen kernels added in ROCm 3.5; search for all unversioned packages
     # if search fails it will abort this script; use true to avoid case where search fails
